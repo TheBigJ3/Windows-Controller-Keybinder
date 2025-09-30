@@ -1,0 +1,26 @@
+# VS / MSVC
+.vs/
+*.sln.DotSettings.user
+x64/
+Debug/
+Release/
+ipch/
+*.obj
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.vcxproj.user
+
+# Build output
+/build/
+/release/
+
+# VS Code
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# OS junk
+.DS_Store
+Thumbs.db

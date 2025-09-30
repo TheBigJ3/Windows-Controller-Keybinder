@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "mkdir build",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-NoProfile","-Command","if (!(Test-Path build)) { New-Item -ItemType Directory -Path build -Force | Out-Null }"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build ControllerMouse",
+      "type": "shell",
+      "command": "cl.exe",
+      "args": [
+        "/EHsc",
+        "/std:c++17",
+        "/Zi", 
+        "/Od",
+        "src\\app\\main.cpp",
+        "/Fe:build\\ControllerMouse.exe",
+        "user32.lib",
+        "xinput.lib",
+        "windowsapp.lib",
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$msCompile"],
+      "group": { "kind": "build", "isDefault": true },
+      "dependsOn": ["mkdir build"]
+    },
+    
+  ]
+}

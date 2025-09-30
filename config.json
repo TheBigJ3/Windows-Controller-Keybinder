@@ -1,0 +1,92 @@
+{
+    "mouse": {
+        "stickActivationKey": "View",
+        "stick": "LeftStick",
+        "sensitivity": 1,
+        "deadzone": 0.15,
+        "triggerSensitivity": 0.05,
+        "mouseLeftClick": [
+            "View",
+            "RightTrigger"
+        ],
+        "mouseRightClick": [
+            "View",
+            "LeftTrigger"
+        ]
+    },
+    "bindings": [
+        {
+            "when": [
+                "View",
+                "X"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_MENU",
+                    "VK_F4"
+                ]
+            }
+        },
+        {
+            "when": [
+                "View",
+                "DPadRight"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_RIGHT"
+                ]
+            }
+        },
+        {
+            "when": [
+                "View",
+                "DPadLeft"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_LEFT"
+                ]
+            }
+        },
+        {
+            "when": [
+                "View",
+                "DPadUp"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_UP"
+                ]
+            }
+        },
+        {
+            "when": [
+                "View",
+                "DPadDown"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_DOWN"
+                ]
+            }
+        },
+        {
+            "when": [
+                "View",
+                "A"
+            ],
+            "do": {
+                "type": "keyCombo",
+                "keys": [
+                    "VK_RETURN"
+                ]
+            }
+        }
+    ]
+}
