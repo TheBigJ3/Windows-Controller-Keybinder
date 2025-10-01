@@ -65,6 +65,8 @@ class BindListener {
         }
 
         inline void solveMouseMovement(SHORT thumbX, SHORT thumbY) {
+            ShowCursor(TRUE);
+
             // Move the mouse multiplying by sensitivity
             // Apply deadzone
             const double deadzone = mouseCfg_.deadzone;
